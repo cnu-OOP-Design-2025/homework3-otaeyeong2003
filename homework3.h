@@ -18,5 +18,5 @@ struct StudentStruct {
     StudentStruct (const char *name, int id, float midterm, float final): name(name), id(id), record(midterm, final) {}
 };
 void fillStudentRecord(StudentStruct *students, int &numbOfStudent);
-void addStudent(StudentStruct *students, int *numOfStudent, const char* name, int id, float midterm, float final);
+void addStudent(StudentStruct *students, int &numOfStudent, const char* name, int id, float midterm, float final);
 int findStudentByStudentID(StudentStruct* students, int numOfStudent, int id);

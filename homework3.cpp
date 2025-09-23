@@ -3,7 +3,7 @@
 #include "homework3.h"
 
 /* FIXME: parameter numOfStudent를 reference 타입으로 바꿔보기 */
-void fillStudentRecord(StudentStruct *students, int& numOfStudent) {
+void fillStudentRecord(StudentStruct *students, int &numOfStudent) {
     addStudent(students, numOfStudent, "Alice", 1001, 90.7, 91.0);
     addStudent(students, numOfStudent, "Bob", 1002, 68.5, 74.8);
     addStudent(students, numOfStudent, "Charlie", 1003, 84.2, 72.8);
