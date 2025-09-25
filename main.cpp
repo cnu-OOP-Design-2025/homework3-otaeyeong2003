@@ -131,7 +131,7 @@ void doTest2(){
     // StudentStruct의 midterm+final 점수를 기준으로 알파벳 순으로 정렬하는 lambda 함수 정의 및 std::sort를 이용해 정렬하기
     cout << " Sort by Total" << endl;
     auto sortByTotal = [](StudentStruct &a, StudentStruct &b) -> bool {
-        return a.record.final + a.record.midterm > b.record.final + a.record.midterm;
+        return (a.record.final + a.record.midterm) > (b.record.final + b.record.midterm);
     };
     std::sort(students, students + numOfStudent, sortByTotal);
     printStudentList();
