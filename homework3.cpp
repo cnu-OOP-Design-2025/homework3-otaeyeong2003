@@ -57,7 +57,7 @@ void fillStudentRecord(StudentStruct *students, int &numOfStudent) {
 
 }
 /* Return Index */
-int findStudentByStudentID(StudentStruct* students, int numOfStudent, int id) {
+int findStudentByStudentID(StudentStruct* students, int &numOfStudent, int id) {
     for (int i =0; i < numOfStudent; i++) {
         if (students[i].id == id) return i;
     }    
